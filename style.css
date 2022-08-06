@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+}
+.text {
+  height: 200px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* .input {
+  background-color: lightgreen;
+} */
+
+.error {
+  background-color: rosybrown;
+}
+
+#status {
+  background-color: whitesmoke;
+  border: 1px solid red;
+  margin: 10px 5px;
+}
+
+.status-display {
+  width: 80px;
+  margin: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  height: 40px;
+
+}
