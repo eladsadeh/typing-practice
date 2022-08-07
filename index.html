@@ -13,9 +13,9 @@
 <body>
   <h1>Typing Test App</h1>
   <div id="test-app">
-    <section>
+    <section id="texts">
       <div id="test-text" class="text">text</div>
-      <form>
+      <form id="input-text">
         <textarea id="input" class="text" placeholder="Start typing to begin test" autofocus></textarea>
       </form>
     </section>
@@ -27,6 +27,11 @@
       <div id="words" class="status-display"></div>
       <label for="wpm">Words per Minute</label>
       <div id="wpm" class="status-display"></div>
+      <label for="accuracy">Accuracy</label>
+      <div class="status-display">
+        <div id="accuracy"></div>
+        <div id="accuracy-detail" class="small"></div>
+      </div>
   </div>
   </section>
   <script type="module" src="./app.js"></script>
