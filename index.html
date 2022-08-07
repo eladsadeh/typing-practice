@@ -11,17 +11,23 @@
 </head>
 
 <body>
-  <section>
-    <div id="test-text" class="text">text</div>
-    <form>
-      <textarea id="input" class="text" placeholder="Start typing to begin test" autofocus></textarea>
-    </form>
-  </section>
-  <section id="status">
-    <div id="message" class="status-display"></div>
-    <div id="timer" class="status-display"></div>
-    <div id="words" class="status-display"></div>
-    <div id="wpm" class="status-display"></div>
+  <h1>Typing Test App</h1>
+  <div id="test-app">
+    <section>
+      <div id="test-text" class="text">text</div>
+      <form>
+        <textarea id="input" class="text" placeholder="Start typing to begin test" autofocus></textarea>
+      </form>
+    </section>
+    <section id="status">
+      <div id="message" class="status-display"></div>
+      <label for="timer">Time</label>
+      <div id="timer" class="status-display"></div>
+      <label for="words">Words typed</label>
+      <div id="words" class="status-display"></div>
+      <label for="wpm">Words per Minute</label>
+      <div id="wpm" class="status-display"></div>
+  </div>
   </section>
   <script type="module" src="./app.js"></script>
 </body>
