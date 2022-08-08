@@ -11,6 +11,11 @@ label {
   font-size: 12px;
   margin-left: 3px;
   margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+#texts label {
+  font-size: 14px;
 }
 
 #test-app {
@@ -18,6 +23,15 @@ label {
   flex-wrap: wrap;
 }
 
+#texts {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 0 10px;
+  background-color: rgb(255, 226, 204);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
 .text {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +40,6 @@ label {
   border: 1px solid lightgray;
   border-radius: 5px;
   width: 400px;
-  margin: 10px;
   padding: 10px;
   box-sizing: content-box;
 }
@@ -39,13 +52,13 @@ label {
   background-color: rgba(255, 0, 0, 0.105);
 }
 .mistake {
-  border: 1px solid rgba(255, 0, 0, 0.467);
-  border-radius: 4px;
+  border: 2px solid rgba(255, 0, 0, 0.467);
+  border-radius: 6px;
   padding: 0;
 }
 
 #status {
-  background-color: whitesmoke;
+  background-color: rgb(255, 226, 204);
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 5px;
@@ -65,4 +78,5 @@ label {
   padding: 6px 10px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  background-color: whitesmoke;
 }
