@@ -77,9 +77,11 @@ function runTest() {
     if (!isTimerRunning) runTimer(true);
     if (isTimerRunning) messageEl.innerText = 'Good luck';
     // check for errors and change background
-    ref.slice(0,input.length) !== input 
+    if (highlightError) {
+      ref.slice(0,input.length) !== input 
       ? inputTextEl.classList.add('error') 
       : inputTextEl.classList.remove('error');
+    }
     // update status indicators (words typed/WPM/Accuracy)
     wordsEl.innerText = `${countWords(input)} / ${wordsCount}`;
     wpmEl.innerText = wordsPerMinutes(input).toFixed(1); 
@@ -107,7 +109,6 @@ function runTest() {
   }
 
   function resetTest() {
-    // ev.preventDefault()
     if (document.getElementById('test-results')) {
     // If preview test eneded, remove the results
       document.getElementById('test-results').remove()
@@ -122,9 +123,14 @@ function runTest() {
     // reset status indicators
     init();
   }
+
+  function handleCheckbox(ev) {
+    highlightError = ev.target.checked;
+    if(!highlightError) inputTextEl.classList.remove('error');
+  }
   // run new test
   function newTest() {
-    // ev.preventDefault();
+    // get new sample text
     sampleText = selectText();
     wordsCount = countWords(sampleText);
     document.getElementById("sample-text").innerText = sampleText;
@@ -140,12 +146,13 @@ function runTest() {
     messageEl.innerText = 'Start typing to begin';
   }
 
-  // "Global" variables (enclosed inside 'runTest' function)
+  // "State" variables (enclosed inside 'runTest' function)
   let timeCounter = 0;
   let isTimerRunning = 0;
   let sampleText = selectText();
   let wordsCount = countWords(sampleText);
-  // saving DOM elements to work with (status indicators)
+  let highlightError = false;
+  // DOM elements to work with (status indicators)
   const timerEl = document.getElementById("timer");
   const wordsEl = document.getElementById("words");
   const messageEl = document.getElementById("message");
@@ -161,6 +168,7 @@ function runTest() {
   inputTextEl.addEventListener('input',handleInput);
   document.getElementById('reset-btn').addEventListener('click', resetTest)
   document.getElementById('new-test').addEventListener('click', newTest)
+  document.getElementById('highlight-error').addEventListener('change', handleCheckbox)
   // initialize status
   init()
 }
