@@ -11,12 +11,18 @@
 </head>
 
 <body>
-  <h1>Typing Test App</h1>
+  <h1>Typing Test Application</h1>
   <div id="test-app">
     <section id="texts">
-      <div id="test-text" class="text">text</div>
+      <label for="sample-text">Sample Text</label>
+      <div id="sample-text" class="text">text</div>
+      <label for="input-text">Your Text</label>
       <form id="input-text">
-        <textarea id="input" class="text" placeholder="Start typing to begin test" autofocus></textarea>
+        <div class="buttons">
+          <button id="reset-btn" type="reset">ReStart</button>
+          <button id="new-test" type="button">New Test</button>
+          <input id="highlight-error" type="checkbox">Highlight Errors</input>
+        </div>
       </form>
     </section>
     <section id="status">
