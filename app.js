@@ -123,7 +123,7 @@ function runTest() {
     // reset status indicators
     init();
   }
-
+  // Set highlight error mode on/off
   function handleCheckbox(ev) {
     highlightError = ev.target.checked;
     if(!highlightError) inputTextEl.classList.remove('error');
@@ -136,7 +136,7 @@ function runTest() {
     document.getElementById("sample-text").innerText = sampleText;
     resetTest()
   }
-  
+  // Initialize status indicators
   function init() {
     timerEl.innerText = secondsToString(0)
     wordsEl.innerText = `0 / ${wordsCount}`;
