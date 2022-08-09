@@ -11,7 +11,7 @@ The application will present the following real-time information:
 - Accuracy: precent of corrct characters typed.
 - Accuracy: number of correct characters and total characters typed.
 
-When the test end (user typed the same numbers of charcters as in sample text), The app will highlight the typing errors with red circle in the bottom pane.
+When the test end (user typed the same numbers of charcters as in sample text), The app will highlight the typing errors with red highlight at the bottom pane.
 
 ## Interaction
 There are two buttons and a checkbox below the bottom pane:
@@ -24,3 +24,4 @@ There are two buttons and a checkbox below the bottom pane:
 
 - Sample texts are selected randomly from `texts.json`. If you want to use other texts, just edit the `texts.json` file.
 - I followed camel case convention used in JavaScript.
+- The application is deployed at https://eladsadeh.github.io/typing-practice/
