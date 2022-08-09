@@ -8,10 +8,10 @@ The application will present the following real-time information:
 - Time elapsed
 - Number of words typed and total number of words in sample text.
 - Words per minute
-- Accuracy: precent of corrct characters typed.
+- Accuracy: precent of correct characters typed.
 - Accuracy: number of correct characters and total characters typed.
 
-When the test end (user typed the same numbers of charcters as in sample text), The app will highlight the typing errors with red circle in the bottom pane.
+When the test end (user typed the same numbers of charcters as in sample text), the app will highlight the typing errors with red circle in the bottom pane.
 
 ## Interaction
 There are two buttons and a checkbox below the bottom pane:
