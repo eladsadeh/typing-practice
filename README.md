@@ -7,7 +7,9 @@ The application will present the following real-time information:
 
 - Time elapsed
 - Number of words typed and total number of words in sample text.
+
 - Words typed per minute.
+
 - Accuracy: precent of correct characters typed.
 - Accuracy: number of correct characters and total characters typed.
 
