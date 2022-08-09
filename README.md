@@ -1,7 +1,7 @@
 # Typing test application
 
 ## Description
-The app starts by presenting a random samle test in the upper pane. To start the test, just start typing in the lower text area pane. The timer will start counting time once the user start typing.
+The app starts by presenting a random sample test in the upper pane. To start the test, just start typing in the lower text area pane. The timer will start counting time once the user start typing.
 
 The application will present the following real-time information:
 
