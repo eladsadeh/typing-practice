@@ -17,7 +17,7 @@ When the test end (user typed the same numbers of charcters as in sample text), 
 There are two buttons and a checkbox below the bottom pane:
 
 - `ReStart` button: Restart the test with the same sample text.
-- `New Test` button: Start new test with randomly selected text.
+- `New Test` button: Start a new test with randomly selected text.
 - `Highlight Errors` checkbox: When checked, if the typed in text contain any errors, the background of the lower pane will turn reddish, to indicate that there are errors.
 
 ## Comments
